@@ -107,6 +107,7 @@ class Controller
             $this->view->errors = $errors;
             $this->view->display('registr_template.php');
         }
+        
     }
 
     /**
