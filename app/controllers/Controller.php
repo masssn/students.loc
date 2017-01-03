@@ -102,7 +102,7 @@ class Controller
         if (empty($errors)) {
             $this->gateaway->addStudent($params);
             $id = $this->gateaway->getLastId();
-            header('location: http://students.local');
+            header('location: /');
         } else {
             $this->view->errors = $errors;
             $this->view->display('registr_template.php');
